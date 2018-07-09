@@ -5,9 +5,9 @@ El presente es el conjunto de apuntes tomado durante el entrenamiento sobre Big 
 ## Temas
 
 * Introducción.  [Link](https://www.zepl.com/viewer/notebooks/bm90ZTovL2RhdmlkanVyYWRvLzA4OWY2MDg5MjM4YTRiMjViYTIxZDhmOTlmYTkzODFhL25vdGUuanNvbg)
-* El ecosistema de Big Data. [Link](https://www.zepl.com/viewer/notebooks/bm90ZTovL2RhdmlkanVyYWRvL2FlYWVjNjUzZmE2MzQxZGI5NDIzMGFjNjk5YjdmNzUyL25vdGUuanNvbg)
-* El ecosistema Big Data de Apache. [Link](https://www.zepl.com/viewer/notebooks/bm90ZTovL2RhdmlkanVyYWRvLzc3NTdiYTUzZjAyYjRjMGE4MGIyNTI2MmM1N2JkNjM5L25vdGUuanNvbg).
-* Bases de datos en HDFS.
-* Formatos para almacenar archivos.
-* Plataformas en proveedores Cloud.
-* Bases de datos NoSQL.
+* El ecosistema de Big Data. [Link](https://github.com/davidjurado/Big-Data-Notes/blob/master/notebook/2.md)
+* El ecosistema Big Data de Apache. [Link](https://github.com/davidjurado/Big-Data-Notes/blob/master/notebook/3.md)
+* Bases de datos en HDFS. [Link](https://github.com/davidjurado/Big-Data-Notes/blob/master/notebook/4.md)
+* Formatos para almacenar archivos. [Link](https://github.com/davidjurado/Big-Data-Notes/blob/master/notebook/5.md)
+* Plataformas en proveedores Cloud. [Link](https://github.com/davidjurado/Big-Data-Notes/blob/master/notebook/6.md)
+* Bases de datos NoSQL. [Link](https://github.com/davidjurado/Big-Data-Notes/blob/master/notebook/7.md)
