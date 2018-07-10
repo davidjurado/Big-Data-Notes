@@ -21,7 +21,7 @@ Al tratar con el sistema de archivos de Hadoop, no solo tiene a su disposición 
 
     Ventajas: Peso ligero
 
-    Desventajas: Lento para leer y escribir, No se pueden dividir archivos comprimidos (conduce a enormes mapas) 
+    Desventajas: Lento para leer y escribir, No se pueden dividir archivos comprimidos (conduce a enormes mapas)
 
 * Formato de archivo de secuencia
 
@@ -96,9 +96,6 @@ Desventajas: no es bueno para Hive, se agrega solo como otros formatos de datos,
 
 El formato de archivo de parquet es también un formato columnar. En lugar de simplemente almacenar filas de datos adyacentes entre sí, también almacena valores de columnas adyacentes entre sí. Por lo tanto, los conjuntos de datos se dividen tanto horizontal como verticalmente. Esto es particularmente útil si su marco de procesamiento de datos solo necesita acceder a un subconjunto de datos que está almacenado en el disco, ya que puede acceder a todos los valores de una sola columna muy rápidamente sin leer registros completos. Al igual que el archivo ORC, es excelente para la compresión con un gran rendimiento de consulta, especialmente eficiente al consultar datos de columnas específicas. El formato de parquet es computacionalmente intenso en el lado de la escritura, pero reduce mucho el costo de E / S para lograr un excelente rendimiento de lectura. Disfruta de más libertad que el archivo ORC en la evolución del esquema, que puede agregar nuevas columnas al final de la estructura.
 
-
-## Resumen
-
-En general, este formato puede optimizar drásticamente las cargas de trabajo, especialmente para Hive y Spark, que tienden a leer solo segmentos de registros en lugar de todo (lo que es más común en MapReduce).
+---
 
 Dado que Avro y Parquet tienen tanto en común al elegir un formato de archivo para usar con HDFS, debemos considerar el rendimiento de lectura y el rendimiento de escritura. Debido a que la naturaleza de HDFS es almacenar datos que se escriben una sola vez, leer varias veces, queremos enfatizar en el rendimiento de lectura. La diferencia fundamental en términos de cómo usar cualquier formato es esta: Avro es un formato basado en Fila. Si se desea recuperar los datos como un todo, se puede usar Avro. Parquet es un formato basado en columnas. Si los datos constan de muchas columnas pero se está interesado en un subconjunto de columnas, se puede usar Parquet.

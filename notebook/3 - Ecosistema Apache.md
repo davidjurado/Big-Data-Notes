@@ -73,7 +73,7 @@ Impala |Proporciona consultas en tiempo real sobre Big Data. Desarrollado por Cl
 | --------- |  :------------|
 Storm |Procesamiento de flujo rápido desarrollado por Twitter.
 Apache S4 | S4 (Simple Scalable Streaming System) es una plataforma de uso general, distribuible, escalable, parcialmente tolerante a fallas y conectable que permite a los programadores desarrollar fácilmente aplicaciones para procesar flujos continuos e ilimitados de datos.
-Samza |Apache Samza es un marco de procesamiento de flujo distribuido. Utiliza Apache Kafka para mensajería y Apache Hadoop YARN para proporcionar tolerancia a fallas, aislamiento de procesador, seguridad y administración de recursos.
+Samza |Apache Samza es un framework de procesamiento de flujo distribuido. Utiliza Apache Kafka para mensajería y Apache Hadoop YARN para proporcionar tolerancia a fallas, aislamiento de procesador, seguridad y administración de recursos.
 Malhar |Plataforma Hadoop nativa, escalable, tolerante a los fallos y con estado completo, desarrollada por DataTorrent
 
 ---
@@ -173,7 +173,7 @@ SumoLogic |Permite crear, ejecutar y proteger aplicaciones AWS, Azure, Google Cl
 
 |Herramienta|Observaciones|
 | --------- |  :------------|
-Samza |Apache Samza es un marco de procesamiento de flujo distribuido. Utiliza Apache Kafka para mensajería y Apache Hadoop YARN para proporcionar tolerancia a fallas, aislamiento de procesador, seguridad y administración de recursos.
+Samza |Apache Samza es un framework de procesamiento de flujo distribuido. Utiliza Apache Kafka para mensajería y Apache Hadoop YARN para proporcionar tolerancia a fallas, aislamiento de procesador, seguridad y administración de recursos.
 Spark |Spark es un motor rápido de procesamiento de datos en memoria con APIs de desarrollo elegantes y expresivas para permitir a los trabajadores de datos ejecutar de manera eficiente la transmisión, el aprendizaje automático o las cargas de trabajo SQL que requieren un acceso iterativo rápido a los conjuntos de datos.
 Malhar |Plataforma Hadoop nativa, escalable, tolerante a los fallos y con estado completo, desarrollada por DataTorrent
 Storm |Procesamiento de flujo rápido desarrollado por Twitter.

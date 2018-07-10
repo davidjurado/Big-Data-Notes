@@ -10,7 +10,7 @@ HBase escala linealmente para manejar grandes conjuntos de datos con miles de mi
 
 Apache Cassandra, un proyecto Apache de alto nivel nacido en Facebook y creado en Dynamo de Amazon y BigTable de Google, es una base de datos distribuida para administrar grandes cantidades de datos estructurados en muchos servidores básicos, al tiempo que proporciona un servicio altamente disponible y ningún punto de falla. Apache Cassandra ofrece capacidades que las bases de datos relacionales y otras bases de datos NoSQL simplemente no pueden igualar: disponibilidad continua, rendimiento de escala lineal, simplicidad operativa y fácil distribución de datos en múltiples centros de datos y zonas de disponibilidad en la nube.
 
-Apache Accumulo
+### Apache Accumulo
 
 Accumulo es un sistema de almacenamiento y recuperación de datos latencia con seguridad de nivel de celda. Pueden almacenar y administrar grandes conjuntos de datos en un clúster. Accumulo usa el HDFS de Apache Hadoop para almacenar sus datos y Apache ZooKeeper para el consenso. Mientras muchos usuarios interactúan directamente con Accumulo, varios proyectos de código abierto usan Accumulo como su tienda subyacente.
 
@@ -28,7 +28,9 @@ Sistema de base de datos orientado a documentos. Es parte de la familia de siste
 
 ### arangodb
 
-ArangoDB es un sistema de base de datos multi-modelo nativo [1] desarrollado por triAGENS GmbH. El sistema de base de datos admite tres modelos de datos importantes (clave / valor, documentos, gráficos) con un núcleo de base de datos y un lenguaje de consulta unificado AQL (Lenguaje de consulta ArangoDB). El lenguaje de consulta es declarativo y permite la combinación de diferentes patrones de acceso a datos en una sola consulta. ArangoDB es un sistema de base de datos NoSQL, pero AQL es similar en muchos sentidos a SQL.
+ArangoDB es un sistema de base de datos multi-modelo nativo desarrollado por triAGENS GmbH. El sistema de base de datos admite tres modelos de datos importantes (clave / valor, documentos, gráficos) con un núcleo de base de datos y un lenguaje de consulta unificado AQL (Lenguaje de consulta ArangoDB). El lenguaje de consulta es declarativo y permite la combinación de diferentes patrones de acceso a datos en una sola consulta. ArangoDB es un sistema de base de datos NoSQL, pero AQL es similar en muchos sentidos a SQL.
+
+---
 
 ### GeoMesa
 
@@ -45,4 +47,4 @@ AsterixDB es un BDMS (Big Data Management System) con un amplio conjunto de func
 
 ### HadoopGIS
 
-Es un sistema de almacenamiento de datos espaciales escalable y de alto rendimiento para ejecutar consultas espaciales a gran escala en Hadoop. Hadoop-GIS admite múltiples tipos de consultas espaciales en MapReduce a través de particiones espaciales, motor de consulta espacial personalizable RESQUE, ejecución de consultas espaciales paralelas implícitas en MapReduce y métodos efectivos para enmendar resultados de consultas mediante el manejo de objetos límite
+Es un sistema de almacenamiento de datos espaciales escalable y de alto rendimiento para ejecutar consultas espaciales a gran escala en Hadoop. Hadoop-GIS admite múltiples tipos de consultas espaciales en MapReduce a través de particiones espaciales, motor de consulta espacial personalizable RESQUE, ejecución de consultas espaciales paralelas implícitas en MapReduce y métodos efectivos para enmendar resultados de consultas mediante el manejo de objetos límite.
