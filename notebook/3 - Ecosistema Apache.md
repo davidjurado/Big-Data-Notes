@@ -21,11 +21,15 @@ Kafka |Sistema distribuido de suscripción y publicación
 
 |Herramienta|Observaciones|
 | --------- |  :------------|
-Map reduce |Framework original de computo distribuido de Hadoop
-YARN |Nueva generación de MapReduce, disponible en Hadoop versión 2.0
+Hadoop| Es un framework de código abierto de Apache escrito en java que permite el procesamiento distribuido de grandes conjuntos de datos en grupos de computadores utilizando modelos de programación simples
+HDFS|Es un sistema de archivos distribuidos y tolerante a fallas, diseñado para convertir un grupo de servidores estándar en un grupo de almacenamiento de escalamiento masivo.
+Map reduce | Es un modelo de programación que permite distribuir el trabajo en diversos nodos del cluster
+YARN |(Yet another resource negociator) Es un framework para la programación de trabajos y la administración de recursos del clúster.
 Weave |Programación YARN simplificada
 Cloudera SDK |Programación simplificada de MapReduce
 Flink|Flink ofrece las mismas características de Spark pero con una implementación muy diferente
+Spark |Spark es un motor rápido de procesamiento de datos en memoria con APIs de desarrollo elegantes y expresivas para permitir a los trabajadores de datos ejecutar de manera eficiente la transmisión, el aprendizaje automático o las cargas de trabajo SQL que requieren un acceso iterativo rápido a los conjuntos de datos.
+TEZ| Similar a spark, puede producir planes más optimos para ejecutar queries
 
 ---
 
@@ -55,6 +59,7 @@ Presto |Desarrollado por Facebook, proporciona consultas SQL rápidas sobre Hado
 Phoenix |Capa SQL sobre HBase. Desarrollado por SalesForce.com.
 Spire |Capa SQL sobre HBase. Desarrollado por DrawnToScale.com.
 Apache Drill| Análisis interactivo de conjuntos de datos a gran escala.
+Apache Zeppelin|Es un Notebook basado en la web de múltiples propósitos que brinda funciones de ingestión de datos, exploración de datos, visualización, uso compartido y colaboración en Hadoop y Spark.
 
 ---
 
@@ -214,5 +219,4 @@ PigUnit |Para testear scripts de Pig
 
 |Herramienta|Observaciones|
 | --------- |  :------------|
-Spark |Spark es un motor rápido de procesamiento de datos en memoria con APIs de desarrollo elegantes y expresivas para permitir a los trabajadores de datos ejecutar de manera eficiente la transmisión, el aprendizaje automático o las cargas de trabajo SQL que requieren un acceso iterativo rápido a los conjuntos de datos.
 Shark (Hive on Spark) | Apache shark es un motor de consulta distribuido desarrollado por la comunidad de código abierto. Este motor de consulta se usa principalmente para datos de Hadoop. Proporciona un rendimiento mejorado y resultados analíticos de alta calidad para los usuarios de Hive.

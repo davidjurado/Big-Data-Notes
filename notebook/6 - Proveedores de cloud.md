@@ -36,3 +36,28 @@
      IBM posee soluciones Big Data como IBM DataWorks, una serie de servicios de refinería de datos basados en la nube que moldean, depuran, combinan y protegen la información. Estos nuevos servicios permiten a los usuarios profesionales optimizar su trabajo de análisis; a los desarrolladores de aplicaciones, integrar servicios de información en nuevas aplicaciones; y, a los profesionales de TI y científicos de datos habilitar modelos de autoservicio. Se suma IBM dashDB, con data warehousing y servicio de analítica basados en la nube que incorporan tecnología in-memory para aportar respuestas en menos tiempo, e IBM Cloudant Local, una edición en las instalaciones de la DBaaS o base de datos en cloud totalmente gestionada, que hace posible una capa de datos de nube híbrida fluida que abarca centros de información privados, dispositivos móviles y proveedores cloud externos. Esto garantiza que los clientes puedan volver a configurar fácilmente sus plataformas de información en la nube conforme pase el tiempo para optimizar costes, la seguridad, el alcance y el rendimiento.
 
     La compañía también ofrece una extensa cartera de capacidades de analítica donde estan incluidas Cognos Business Intelligence, las plataformas SPSS de analítica predictiva y Watson Analytics. Esta plataforma de IBM funciona como la puerta principal para la innovación en la nube, implementando las capacidades como servicio (capabilities-as-a-service) de IBM y las de los partners y los fabricantes externos con la seguridad y la resiliencia que esperan las empresas.
+
+* Cisco Systems
+
+    Cisco ofrece servicios como la infraestructura integrada de Cisco UCS para Big Data y Analytics, la cual de manera rápida y eficiente, ofrezca un rendimiento listo para usar mientras escala de pequeño a muy grande a medida que crece el negocio y sus requisitos de big data y análisis. Cuenta con un sistema de computación unificado UCS, que puede ajustar el entorno para satisfacer las necesidades únicas de big data y análisis. Y Cisco Unified Management, automatiza la implementación de Hadoop en las soluciones de infraestructura Big Data de Cisco. Proporciona un panel de administración en la infraestructura física y el software de Hadoop.
+
+* Cloudera Inc 
+
+    Ofrece una de las distribuciones de hadoop más utilizada en el mercado, la distribución de Cloudera (CDH) fue la primera en aparecer en el mercado, combinando Big Data y Hadoop. CDH no solo incluye el núcleo de Hadoop (HDFS, MapReduce,etc.) sino que también integra diversos proyectos de Apache (HBase, Mahout, Pig, Hive, etc.). CDH es 100% open-source, y cuenta con una interfaz gráfica propietaria, Cloudera Manager, para la administración y gestión de los nodos del clúster Hadoop. La descarga es totalmente gratuita. No obstante, también cuenta con una versión empresarial, que incluye una interfaz más sofisticada. Cloudera recientemente ha estrechado vínculos tanto con IBM como con Oracle.
+
+* Hortonworks, Inc 
+
+    A diferencia de Cloudera, Hortonworks es una de las distribuciones más recientes de Hadoop (HDP). Al igual que CDH, HDP es totalmente open-source, incluye las herramientas que forman el núcleo de Hadoop, y por supuesto también incorpora diferentes proyectos open-source de Apache. Una de las diferencias más notables respecto a Cloudera es la integración de Apache Ambari como herramienta de gestión y administración del clúster. A diferencia del Cloudera Manager, Apache Ambari no es propietario.  Sin embargo, el nivel de madurez de la herramienta de gestión de Cloudera es superior a la de Hortonworks.
+
+    
+* MapR Tecnologies
+
+    MapR proporciona acceso a una variedad de fuentes de datos desde un único clúster informático, incluidas grandes cargas de datos como Apache Hadoop y Apache Spark, un sistema de archivos distribuido, un sistema de gestión de bases de datos multimodelo y el procesamiento de eventos, combinando análisis en tiempo real. tiempo con aplicaciones operacionales. Su tecnología funciona tanto en hardware básico como en servicios públicos de computación en la nube.
+
+* Datameer, Inc 
+
+    Datameer permite a producir y entregar más activos de datos para ayudar a los equipos comerciales a responder nuevas preguntas. La plataforma ágil de Datameer cubre todo el ciclo de vida de los datos, incluida la ingestión, la preparación, la exploración y el consumo, para permitir a los analistas crear y administrar sus propias canalizaciones de datos analíticos para generar estadísticas más rápidas y fiables basadas en datos en cualquier lugar.
+
+* Pentaho Corportion 
+
+    Pentaho proporciona herramientas de visualización para facilitar la definición de los conjuntos de datos que son importantes para el análisis interactivo. Estos conjuntos de datos y análisis asociados se pueden compartir fácilmente con otros y, a medida que surgen nuevas preguntas comerciales, se pueden definir nuevas vistas de datos para el análisis interactivo.
