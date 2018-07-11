@@ -4,6 +4,19 @@ Se mencionaron algunos miembros del ecosistema de Big Data en el anterior [docum
 
 ---
 
+### Sistemas de archivos distribuidos
+
+|Herramienta|Observaciones|
+| --------- |  :------------|
+Apache HDFS |El Sistema de archivos distribuidos de Hadoop (HDFS) ofrece una forma de almacenar archivos de gran tamaño en varias máquinas. Hadoop y HDFS se obtuvieron a partir del documento de Google File System (GFS).
+Red Hat GlusterFS|GlusterFS es un sistema de archivos de almacenamiento conectado a la red de escalamiento horizontal. GlusterFS fue desarrollado originalmente por Gluster, Inc., luego por Red Hat, Inc., después de su compra de Gluster en 2011.
+Quantcast File System QFS|QFS es un paquete de software de sistema de archivos distribuido de código abierto para MapReduce a gran escala u otras cargas de trabajo de procesamiento por lotes. Fue diseñado como una alternativa al HDFS de Apache Hadoop, destinado a ofrecer un mejor rendimiento y rentabilidad para los clusters de procesamiento a gran escala.
+Ceph Filesystem|Ceph es una plataforma de almacenamiento de software libre diseñada para presentar el almacenamiento de objetos, bloques y archivos desde un solo clúster de computadora distribuida. Los principales objetivos de Ceph son distribuirse por completo sin un solo punto de falla, escalable al nivel exabyte y libremente disponible.
+Lustre file system|El sistema de archivos Lustre es un sistema de archivos distribuido de alto rendimiento destinado a entornos de red  más grandes y de alta disponibilidad. Tradicionalmente, Lustre está configurado para administrar dispositivos de disco de almacenamiento de datos remotos dentro de una Red de área de almacenamiento (SAN), que es dos o más dispositivos de disco conectados de forma remota que se comunican mediante un protocolo de interfaz de sistema de computadora pequeña (SCSI).
+Alluxio|Alluxio, el primer sistema de almacenamiento distribuido virtual centrado en la memoria del mundo, unifica el acceso a los datos y une los marcos de cálculo y los sistemas de almacenamiento subyacentes. Las aplicaciones solo necesitan conectarse con Alluxio para acceder a los datos almacenados en cualquier sistema de almacenamiento subyacente.
+GridGain|GridGain es un proyecto de código abierto con licencia bajo Apache 2.0. Una de las piezas principales de esta plataforma es el Acelerador In-Memory Apache Hadoop, cuyo objetivo es acelerar HDFS y Map / Reduce incorporando datos y cálculos en la memoria.
+XtreemFS|XtreemFS es un sistema de almacenamiento de propósito general y cubre la mayoría de las necesidades de almacenamiento en una sola implementación. Es de código abierto, no requiere hardware especial ni módulos de kernel, y puede montarse en Linux, Windows y OS X. XtreemFS se ejecuta distribuido y ofrece resistencia a través de la replicación.
+
 ### Herramientas de inserción de datos en HDFS
 
 La mayoría de los datos se originan fuera del clúster de Hadoop. Estas herramientas permiten insertar datos en HDFS.
