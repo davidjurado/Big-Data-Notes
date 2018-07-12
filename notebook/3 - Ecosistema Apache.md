@@ -1,6 +1,6 @@
 # El ecosistema Big Data en el ambiente Apache
 
-Se mencionaron algunos miembros del ecosistema de Big Data en el anterior [documento](https://github.com/davidjurado/Big-Data-Notes/blob/master/notebook/1.md) . Sin embargo, el ecosistema de Apache es demasiado grande y necesita ser definido por separado, a continuación se mencionan los componentes que conforman el ecosistema Big Data en el ambiente Apache
+Se mencionaron algunos miembros del ecosistema de Big Data en el anterior [documento](https://github.com/davidjurado/Big-Data-Notes/blob/master/notebook/1.md) . Sin embargo, el ecosistema de Apache es demasiado grande y necesita ser definido por separado, a continuación se mencionan los componentes que conforman el ecosistema Big Data en el ambiente Apache (y algunos otros que no son de apache pero se complementan).
 
 ---
 
@@ -13,9 +13,28 @@ Red Hat GlusterFS|GlusterFS es un sistema de archivos de almacenamiento conectad
 Quantcast File System QFS|QFS es un paquete de software de sistema de archivos distribuido de código abierto para MapReduce a gran escala u otras cargas de trabajo de procesamiento por lotes. Fue diseñado como una alternativa al HDFS de Apache Hadoop, destinado a ofrecer un mejor rendimiento y rentabilidad para los clusters de procesamiento a gran escala.
 Ceph Filesystem|Ceph es una plataforma de almacenamiento de software libre diseñada para presentar el almacenamiento de objetos, bloques y archivos desde un solo clúster de computadora distribuida. Los principales objetivos de Ceph son distribuirse por completo sin un solo punto de falla, escalable al nivel exabyte y libremente disponible.
 Lustre file system|El sistema de archivos Lustre es un sistema de archivos distribuido de alto rendimiento destinado a entornos de red  más grandes y de alta disponibilidad. Tradicionalmente, Lustre está configurado para administrar dispositivos de disco de almacenamiento de datos remotos dentro de una Red de área de almacenamiento (SAN), que es dos o más dispositivos de disco conectados de forma remota que se comunican mediante un protocolo de interfaz de sistema de computadora pequeña (SCSI).
-Alluxio|Alluxio, el primer sistema de almacenamiento distribuido virtual centrado en la memoria del mundo, unifica el acceso a los datos y une los marcos de cálculo y los sistemas de almacenamiento subyacentes. Las aplicaciones solo necesitan conectarse con Alluxio para acceder a los datos almacenados en cualquier sistema de almacenamiento subyacente.
+Alluxio|Alluxio, el primer sistema de almacenamiento distribuido virtual centrado en la memoria del mundo, unifica el acceso a los datos y une los frameworks de cálculo y los sistemas de almacenamiento subyacentes. Las aplicaciones solo necesitan conectarse con Alluxio para acceder a los datos almacenados en cualquier sistema de almacenamiento subyacente.
 GridGain|GridGain es un proyecto de código abierto con licencia bajo Apache 2.0. Una de las piezas principales de esta plataforma es el Acelerador In-Memory Apache Hadoop, cuyo objetivo es acelerar HDFS y Map / Reduce incorporando datos y cálculos en la memoria.
 XtreemFS|XtreemFS es un sistema de almacenamiento de propósito general y cubre la mayoría de las necesidades de almacenamiento en una sola implementación. Es de código abierto, no requiere hardware especial ni módulos de kernel, y puede montarse en Linux, Windows y OS X. XtreemFS se ejecuta distribuido y ofrece resistencia a través de la replicación.
+
+---
+
+### frameworks de programación distribuida
+
+|Herramienta|Observaciones|
+| --------- |  :------------|
+Apache Hadoop| Es un framework de código abierto de Apache escrito en java que permite el procesamiento distribuido de grandes conjuntos de datos en grupos de computadores utilizando modelos de programación simples.
+Apache Map reduce | Es un modelo de programación que permite distribuir el trabajo en diversos nodos del cluster
+Apache YARN |(Yet another resource negociator) Es un framework para la programación de trabajos y la administración de recursos del clúster.
+Apache Flink|Apache Flink presenta poderosas abstracciones de programación en Java y Scala, un tiempo de ejecución de alto rendimiento y optimización automática de programas.
+Apache Spark |Spark es un motor rápido de procesamiento de datos en memoria con APIs de desarrollo elegantes y expresivas para permitir a los trabajadores de datos ejecutar de manera eficiente la transmisión, el aprendizaje automático o las cargas de trabajo SQL que requieren un acceso iterativo rápido a los conjuntos de datos.
+Apache TEZ| Tez es una propuesta para desarrollar una aplicación genérica que se puede usar para procesar DAG de tareas complejas de procesamiento de datos y se ejecuta de forma nativa en Apache Hadoop YARN. Tez generaliza el paradigma MapReduce a un framework más poderoso basado en expresar cálculos como un gráfico de flujo de datos.
+Apache Ignite|Es una plataforma en memoria distribuida para computación y transacciones en conjuntos de datos a gran escala en tiempo real. Incluye una almacenamiento en memoria de clave-valor distribuida, capacidades de ejecución SQL, map-reduce, estructuras de datos distribuidos, consultas continuas, subsistemas de mensajería y eventos, integración de Hadoop y Spark. Ignite está construido en Java y proporciona una API para .NET y C ++.
+Apache Pig|Pig proporciona un motor para ejecutar flujos de datos en paralelo en Hadoop. Incluye un lenguaje, Pig Latin, para expresar estos flujos de datos. Pig Latin incluye operadores para muchas de las operaciones de datos tradicionales (join, sort, filter, etc.), así como la capacidad de los usuarios para desarrollar sus propias funciones de lectura, procesamiento y escritura de datos. Pig corre en Hadoop.
+Apache Storm|Storm es un procesador de eventos complejos (CEP) y un framework de cálculo distribuido escrito predominantemente en el lenguaje de programación Clojure. Es un sistema de computación distribuido en tiempo real para el procesamiento rápido de grandes flujos de datos.
+Apache Flink|Apache Flink (anteriormente llamado Stratosphere) presenta poderosas abstracciones de programación en Java y Scala, un tiempo de ejecución de alto rendimiento y optimización automática de programas, es un sistema de procesamiento de datos y una alternativa al componente MapReduce de Hadoop. Viene con su propio tiempo de ejecución, en lugar de ejecutarse sobre MapReduce.
+Apache Apex|Apache Apex es una plataforma empresarial basada en Yarn que unifica el procesamiento streaming y el procesamiento por lotes. Procesa grandes datos en streaming de una forma altamente escalable, de alto rendimiento, tolerante a fallas, segura, distribuida y de fácil operación.
+---
 
 ### Herramientas de inserción de datos en HDFS
 
@@ -27,21 +46,6 @@ Flume |Flume es un servicio distribuido, confiable y disponible para recopilar, 
 Chukwa |Agregador de registro a gran escala y análisis.
 Sqoop |Sistema para la transferencia masiva de datos entre HDFS y áreas de almacenamiento de datos estructuradas como RDBMS.
 Kafka |Sistema distribuido de suscripción y publicación para procesar grandes cantidades de datos de transmisión. Kafka es una Message Queue desarrollada por LinkedIn que persiste mensajes en el disco de una manera muy eficiente. Debido a que los mensajes se conservan, tiene la interesante capacidad de rebobinar una transmisión y volver a consumir los mensajes.
-
----
-
-### frameworks de ejecución
-
-|Herramienta|Observaciones|
-| --------- |  :------------|
-Hadoop| Es un framework de código abierto de Apache escrito en java que permite el procesamiento distribuido de grandes conjuntos de datos en grupos de computadores utilizando modelos de programación simples
-HDFS|Es un sistema de archivos distribuidos y tolerante a fallas, diseñado para convertir un grupo de servidores estándar en un grupo de almacenamiento de escalamiento masivo.
-Map reduce | Es un modelo de programación que permite distribuir el trabajo en diversos nodos del cluster
-YARN |(Yet another resource negociator) Es un framework para la programación de trabajos y la administración de recursos del clúster.
-Cloudera SDK |Programación simplificada de MapReduce
-Flink|Apache Flink presenta poderosas abstracciones de programación en Java y Scala, un tiempo de ejecución de alto rendimiento y optimización automática de programas.
-Spark |Spark es un motor rápido de procesamiento de datos en memoria con APIs de desarrollo elegantes y expresivas para permitir a los trabajadores de datos ejecutar de manera eficiente la transmisión, el aprendizaje automático o las cargas de trabajo SQL que requieren un acceso iterativo rápido a los conjuntos de datos.
-TEZ| Tez es una propuesta para desarrollar una aplicación genérica que se puede usar para procesar DAG de tareas complejas de procesamiento de datos y se ejecuta de forma nativa en Apache Hadoop YARN. Tez generaliza el paradigma MapReduce a un framework más poderoso basado en expresar cálculos como un gráfico de flujo de datos.
 
 ---
 
