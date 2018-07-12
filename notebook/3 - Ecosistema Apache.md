@@ -7,22 +7,22 @@ Se mencionaron algunos miembros del ecosistema de Big Data en el anterior [docum
 ### Sistemas de archivos distribuidos
 
 |Herramienta|Observaciones|
-| --------- |  :------------|
+| --------- | :------------|
 Apache HDFS |El Sistema de archivos distribuidos de Hadoop (HDFS) ofrece una forma de almacenar archivos de gran tamaño en varias máquinas. Hadoop y HDFS se obtuvieron a partir del documento de Google File System (GFS).
 Red Hat GlusterFS|GlusterFS es un sistema de archivos de almacenamiento conectado a la red de escalamiento horizontal. GlusterFS fue desarrollado originalmente por Gluster, Inc., luego por Red Hat, Inc., después de su compra de Gluster en 2011.
 Quantcast File System QFS|QFS es un paquete de software de sistema de archivos distribuido de código abierto para MapReduce a gran escala u otras cargas de trabajo de procesamiento por lotes. Fue diseñado como una alternativa al HDFS de Apache Hadoop, destinado a ofrecer un mejor rendimiento y rentabilidad para los clusters de procesamiento a gran escala.
 Ceph Filesystem|Ceph es una plataforma de almacenamiento de software libre diseñada para presentar el almacenamiento de objetos, bloques y archivos desde un solo clúster de computadora distribuida. Los principales objetivos de Ceph son distribuirse por completo sin un solo punto de falla, escalable al nivel exabyte y libremente disponible.
-Lustre file system|El sistema de archivos Lustre es un sistema de archivos distribuido de alto rendimiento destinado a entornos de red  más grandes y de alta disponibilidad. Tradicionalmente, Lustre está configurado para administrar dispositivos de disco de almacenamiento de datos remotos dentro de una Red de área de almacenamiento (SAN), que es dos o más dispositivos de disco conectados de forma remota que se comunican mediante un protocolo de interfaz de sistema de computadora pequeña (SCSI).
+Lustre file system|El sistema de archivos Lustre es un sistema de archivos distribuido de alto rendimiento destinado a entornos de red más grandes y de alta disponibilidad. Tradicionalmente, Lustre está configurado para administrar dispositivos de disco de almacenamiento de datos remotos dentro de una Red de área de almacenamiento (SAN), que es dos o más dispositivos de disco conectados de forma remota que se comunican mediante un protocolo de interfaz de sistema de computadora pequeña (SCSI).
 Alluxio|Alluxio, el primer sistema de almacenamiento distribuido virtual centrado en la memoria del mundo, unifica el acceso a los datos y une los frameworks de cálculo y los sistemas de almacenamiento subyacentes. Las aplicaciones solo necesitan conectarse con Alluxio para acceder a los datos almacenados en cualquier sistema de almacenamiento subyacente.
 GridGain|GridGain es un proyecto de código abierto con licencia bajo Apache 2.0. Una de las piezas principales de esta plataforma es el Acelerador In-Memory Apache Hadoop, cuyo objetivo es acelerar HDFS y Map / Reduce incorporando datos y cálculos en la memoria.
 XtreemFS|XtreemFS es un sistema de almacenamiento de propósito general y cubre la mayoría de las necesidades de almacenamiento en una sola implementación. Es de código abierto, no requiere hardware especial ni módulos de kernel, y puede montarse en Linux, Windows y OS X. XtreemFS se ejecuta distribuido y ofrece resistencia a través de la replicación.
 
 ---
 
-### frameworks de programación distribuida
+### Frameworks de programación distribuida
 
 |Herramienta|Observaciones|
-| --------- |  :------------|
+| --------- | :------------|
 Apache Hadoop| Es un framework de código abierto de Apache escrito en java que permite el procesamiento distribuido de grandes conjuntos de datos en grupos de computadores utilizando modelos de programación simples.
 Apache Map reduce | Es un modelo de programación que permite distribuir el trabajo en diversos nodos del cluster
 Apache YARN |(Yet another resource negociator) Es un framework para la programación de trabajos y la administración de recursos del clúster.
@@ -34,6 +34,7 @@ Apache Pig|Pig proporciona un motor para ejecutar flujos de datos en paralelo en
 Apache Storm|Storm es un procesador de eventos complejos (CEP) y un framework de cálculo distribuido escrito predominantemente en el lenguaje de programación Clojure. Es un sistema de computación distribuido en tiempo real para el procesamiento rápido de grandes flujos de datos.
 Apache Flink|Apache Flink (anteriormente llamado Stratosphere) presenta poderosas abstracciones de programación en Java y Scala, un tiempo de ejecución de alto rendimiento y optimización automática de programas, es un sistema de procesamiento de datos y una alternativa al componente MapReduce de Hadoop. Viene con su propio tiempo de ejecución, en lugar de ejecutarse sobre MapReduce.
 Apache Apex|Apache Apex es una plataforma empresarial basada en Yarn que unifica el procesamiento streaming y el procesamiento por lotes. Procesa grandes datos en streaming de una forma altamente escalable, de alto rendimiento, tolerante a fallas, segura, distribuida y de fácil operación.
+Apache REEF|Apache REEF (Retainable Evaluator Execution Framework) es una libreria para el desarrollo de aplicaciones portátiles para administradores de recursos de clusters como Apache Hadoop YARN o Apache Mesos.
 ---
 
 ### Herramientas de inserción de datos en HDFS
@@ -41,7 +42,7 @@ Apache Apex|Apache Apex es una plataforma empresarial basada en Yarn que unifica
 La mayoría de los datos se originan fuera del clúster de Hadoop. Estas herramientas permiten insertar datos en HDFS.
 
 |Herramienta|Observaciones|
-| --------- |  :------------|
+| --------- | :------------|
 Flume |Flume es un servicio distribuido, confiable y disponible para recopilar, agregar y mover grandes cantidades de datos de registro de manera eficiente. Tiene una arquitectura simple y flexible basada en flujos de datos de transmisión. Es robusto y tolerante a fallas con mecanismos de confiabilidad ajustables y muchos mecanismos de conmutación por error y recuperación. Utiliza un modelo de datos extensible simple que permite la aplicación analítica en línea.
 Chukwa |Agregador de registro a gran escala y análisis.
 Sqoop |Sistema para la transferencia masiva de datos entre HDFS y áreas de almacenamiento de datos estructuradas como RDBMS.
@@ -52,7 +53,7 @@ Kafka |Sistema distribuido de suscripción y publicación para procesar grandes 
 ### Consulta de datos en HDFS
 
 |Herramienta|Observaciones|
-| --------- |  :------------|
+| --------- | :------------|
 Java MapReduce |Mapreduce nativo en Java
 Hadoop Streaming |Mapreduce en otros lenguajes (Ruby, Python)
 Pig |Pig proporciona un motor para ejecutar flujos de datos en paralelo en Hadoop. Incluye un lenguaje, Pig Latin, para expresar estos flujos de datos. Pig Latin incluye operadores para muchas de las operaciones de datos tradicionales (join, sort, filter, etc.), así como la capacidad de los usuarios para desarrollar sus propias funciones de lectura, procesamiento y escritura de datos. Pig corre en Hadoop. Utiliza tanto el sistema de archivos distribuidos de Hadoop, HDFS, como el sistema de procesamiento de Hadoop, MapReduce.
@@ -67,7 +68,7 @@ Presto |Desarrollado por Facebook, es un motor SQL que en promedio es 10 veces m
 ### SQL en Hadoop / HBase
 
 |Herramienta|Observaciones|
-| --------- |  :------------|
+| --------- | :------------|
 Hive |Hive proporciona una capa SQL sobre HDFS. Los datos se pueden consultar utilizando SQL en lugar de escribir código Java Map Reduce.
 Stinger / Tez |Próxima generación de Hive.
 Impala |Proporciona consultas en tiempo real sobre Big Data. Desarrollado por Cloudera.
@@ -81,7 +82,7 @@ Apache Zeppelin|Es un Notebook basado en la web de múltiples propósitos que br
 ## Procesamiento en Streaming
 
 |Herramienta|Observaciones|
-| --------- |  :------------|
+| --------- | :------------|
 Storm |Es un framework de cálculo distribuido escrito predominantemente en el lenguaje de programación Clojure. Es un sistema de computación distribuido en tiempo real para el procesamiento rápido de grandes flujos de datos. Storm es una arquitectura basada en el paradigma master-workers.
 Apache S4 | S4 (Simple Scalable Streaming System) es una plataforma de uso general, distribuible, escalable, parcialmente tolerante a fallas y conectable que permite a los programadores desarrollar fácilmente aplicaciones para procesar flujos continuos e ilimitados de datos.
 Samza |Apache Samza es un frework de procesamiento de flujo distribuido. Utiliza Apache Kafka para mensajería y Apache Hadoop YARN para proporcionar tolerancia a fallas, aislamiento de procesador, seguridad y administración de recursos.
@@ -92,7 +93,7 @@ Malhar |Plataforma Hadoop nativa, escalable, tolerante a los fallos y con estado
 ### Almacenamiento NoSQL
 
 |Herramienta|Observaciones|
-| --------- |  :------------|
+| --------- | :------------|
 HBase |Base de datos distribuida no relacional. Operaciones de lectura y escritura en tiempo real en tablas muy grandes orientadas a columnas (BDDB: Big Data Data Base). Es el sistema de respaldo para salidas de trabajos de MapReduce. Es la base de datos Hadoop.
 Cassandra |Base de datos NoSQL distribuida, es un BDDB. MapReduce puede recuperar datos de Cassandra. Puede ejecutarse sin HDFS o encima de HDFS. HBase y sus sistemas de soporte requeridos se derivan de lo que se conoce de los diseños originales de Google BigTable y Google File System.
 Redis |Redis es una almacenaiento de estructuras de datos de código abierto, en red, con durabilidad opcional. Está escrito en ANSI C. En su capa externa, el modelo de datos de Redis es un diccionario que mapea las claves de los valores. Una de las principales diferencias entre Redis y otros sistemas de almacenamiento estructurados es que Redis admite no solo cadenas, sino también tipos de datos abstractos.
@@ -104,7 +105,7 @@ Kudu|sistema de almacenamiento de datos en formato columnar que permite realizar
 ### Hadoop en la nube
 
 |Herramienta|Observaciones|
-| --------- |  :------------|
+| --------- | :------------|
 Amazon Elastic Map Reduce (EMR) |Es un servicio web que facilita procesar grandes cantidades de datos de manera eficiente. Amazon EMR utiliza el proceso de Hadoop combinado con varios productos de AWS para realizar tareas como la indexación web, la extracción de datos, el análisis de archivos de registro, el aprendizaje automático, la simulación científica y el almacenamiento de datos.
 Microsoft Azure|Para la analítica, Azure tiene Data Lake Analytics, que utiliza U-SQL propietario con SQL y C++, así como HDInsight, un servicio basado en Hadoop. 
 Hadoop on Google Cloud |El servicio de datos BigQuery de Google utiliza una interfaz similar a SQL que es intuitivo para que la mayoría de los usuarios –incluso los no técnicos– lo aprendan.
@@ -113,7 +114,7 @@ Whirr |Herramienta para activar y administrar fácilmente los clústeres Hadoop 
 ### Herramientas de flujo de trabajo
 
 |Herramienta|Observaciones|
-| --------- |  :------------|
+| --------- | :------------|
 Oozie |Sistema de planificador de trabajos de flujo para trabajos de MapReduce utilizando DAG (gráficos acíclicos directos). El coordinador de Oozie puede activar trabajos por tiempo y disponibilidad de datos
 Azkaban|Gestión del flujo de trabajo de Hadoop. Es un planificador de trabajos por lotes creado por Linkedin.
 Cascading |Framework para que los desarrolladores de Java creen sólidas aplicaciones de Data Analytics y Data Management en Apache Hadoop.
@@ -123,7 +124,7 @@ Lipstick |Permite obtener una visualización del flujo de trabajo Pig
 ### frameworks de serialización
 
 |Herramienta|Observaciones|
-| --------- |  :------------|
+| --------- | :------------|
 Avro |Apache Avro es un framework para modelar, serializar y realizar llamadas de procedimiento remoto (RPC). Los datos Avro se describen mediante un esquema, y ​​una característica interesante es que el esquema se almacena en el mismo archivo que los datos que describe, por lo que los archivos son autodescriptivos.
 Trevni |Formato de archivo de columna
 Protobuf |Biblioteca de serialización popular (no es un proyecto de Hadoop).
@@ -132,7 +133,7 @@ Parquet |Formato de almacenamiento en columna disponible para cualquier proyecto
 ### Sistemas de monitoreo
 
 |Herramienta|Observaciones|
-| --------- |  :------------|
+| --------- | :------------|
 Hue |Aplicación web para interactuar con Apache Hadoop. No es una herramienta de desarrollo, es una interfaz web de código abierto que admite Apache Hadoop y su ecosistema.
 Ganglia |Sistema de monitoreo general del host. Hadoop puede publicar métricas en Ganglia.
 Open TSDB |Colector de métricas y visualizador.
@@ -141,7 +142,7 @@ Nagios |Monitoreo de la infraestructura de TI.
 ### Aplicaciones y plataformas
 
 |Herramienta|Observaciones|
-| --------- |  :------------|
+| --------- | :------------|
 Mahout |Librería de Machine learning y procesamiento matematico que corre sobre Hadoop.
 Giraph |Apache Giraph es un sistema iterativo de procesamiento de gráficos creado para una gran escalabilidad. Por ejemplo, actualmente se usa en Facebook para analizar el gráfico social formado por los usuarios y sus conexiones.
 Lily |Lily unifica Apache HBase, Hadoop y Solr en una plataforma de datos interactiva e integrada
@@ -149,21 +150,21 @@ Lily |Lily unifica Apache HBase, Hadoop y Solr en una plataforma de datos intera
 ### Coordinación Distribuida
 
 |Herramienta|Observaciones|
-| --------- |  :------------|
+| --------- | :------------|
 Zookeeper |ZooKeeper es un servicio centralizado para mantener la información de configuración, nombrar y proporcionar sincronización distribuida.
 Book keeper |Servicio de registro distribuido basado en ZooKeeper.
 
 ### Data Analytics en Hadoop
 
 |Herramienta|Observaciones|
-| --------- |  :------------|
+| --------- | :------------|
 R language |Entorno de software para computación y gráficos estadísticos.
 RHIPE |Integra R y Hadoop.
 
 ### Procesamiento de mensajes distribuidos
 
 |Herramienta|Observaciones|
-| --------- |  :------------|
+| --------- | :------------|
 Kafka |Sistema distribuido de suscripción y publicación.
 Akka |Sistema de mensajería distribuida con actores.
 RabbitMQ |Sistema de mensajería MQ distribuido.
@@ -171,7 +172,7 @@ RabbitMQ |Sistema de mensajería MQ distribuido.
 ### Herramientas de Business Intelligence (BI)
 
 |Herramienta|Observaciones|
-| --------- |  :------------|
+| --------- | :------------|
 Datameer |La compañía se centra en el análisis y la visualización de big data. 
 Tableau |Empresa de software que desarrolla productos de visualización de datos interactivos que se enfocan en inteligencia empresarial.
 Pentaho |Ofrece un conjunto de programas para generar inteligencia empresarial.
@@ -183,7 +184,7 @@ SumoLogic |Permite crear, ejecutar y proteger aplicaciones AWS, Azure, Google Cl
 ### frameworks basados ​​en YARN
 
 |Herramienta|Observaciones|
-| --------- |  :------------|
+| --------- | :------------|
 Samza |Apache Samza es un framework de procesamiento de flujo distribuido. Utiliza Apache Kafka para mensajería y Apache Hadoop YARN para proporcionar tolerancia a fallas, aislamiento de procesador, seguridad y administración de recursos.
 Spark |Spark es un motor rápido de procesamiento de datos en memoria con APIs de desarrollo elegantes y expresivas para permitir a los trabajadores de datos ejecutar de manera eficiente la transmisión, el aprendizaje automático o las cargas de trabajo SQL que requieren un acceso iterativo rápido a los conjuntos de datos.
 Malhar |Plataforma Hadoop nativa, escalable, tolerante a los fallos y con estado completo, desarrollada por DataTorrent
@@ -193,7 +194,7 @@ Hoya (HBase en YARN) | La herramienta Hoya es una herramienta Java y actualmente
 ### Librerias / frameworks
 
 |Herramienta|Observaciones|
-| --------- |  :------------|
+| --------- | :------------|
 Kiji |Crear aplicaciones Big Data en tiempo real en Apache HBase
 Elephant Bird |Códigos de compresión y serializadores para Hadoop.
 Summing Bird |MapReduce en Storm
@@ -204,25 +205,25 @@ Continuuity |Crea aplicaciones en HBase fácilmente
 ### Gestión de datos
 
 |Herramienta|Observaciones|
-| --------- |  :------------|
+| --------- | :------------|
 Apache Falcon |Gestión de datos, linaje de datos
 
 ### Seguridad
 
 |Herramienta|Observaciones|
-| --------- |  :------------|
+| --------- | :------------|
 Apache Sentry |Es un sistema altamente modular para proporcionar una autorización basada en funciones de granularidad fina a datos y metadatos almacenados en un clúster Apache Hadoop.
 Apache Knox |Es una puerta de enlace API REST para interactuar con clústeres de Hadoop. Knox Gateway proporciona un único punto de acceso para todas las interacciones REST con clústeres de Hadoop.
 
-###  frameworks de prueba
+### frameworks de prueba
 
 |Herramienta|Observaciones|
-| --------- |  :------------|
+| --------- | :------------|
 MrUnit |framework de pruebas unitarias para Java MapReduce
 PigUnit |Para testear scripts de Pig
 
 ### Adicional
 
 |Herramienta|Observaciones|
-| --------- |  :------------|
+| --------- | :------------|
 Shark (Hive on Spark) | Apache shark es un motor de consulta distribuido desarrollado por la comunidad de código abierto. Este motor de consulta se usa principalmente para datos de Hadoop. Proporciona un rendimiento mejorado y resultados analíticos de alta calidad para los usuarios de Hive.
