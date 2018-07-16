@@ -25,7 +25,6 @@ Algunas soluciones NoSQL incluyen soporte para datos geoespaciales de forma nati
 |Azure Cosmos DB (DocumentDB)|-|-|-
 |MongoDB|geohash/quadtree|GeoJSON|BBOX,radius,arbitrary shape
 |Neo4j|-|-|-|
-|CouchDB with GeoCouch extension|-|-|-|
 |Cassandra|-|-|-|
 |Redis|-|-|-|
 |HBase|-|-|-|
@@ -35,3 +34,10 @@ Algunas soluciones NoSQL incluyen soporte para datos geoespaciales de forma nati
 |Memcached|-|-|-|
 |PostGIS|-|-|-|
 |BigTable|-|-|-|
+|Clusterpoint|-|-|-|
+|Teradata|-|-|-|
+|AllegroGraph|-|-|-| 
+|RavenDB|-|-|-|
+|MarkLogic|-|-|-|
+|asterixdb|-|-|-|
+|Tarantool|-|-|-|-|
