@@ -39,7 +39,7 @@ Las diferentes etapas de la transformación de Big Data requieren y utilizan dif
 
 * **Base de datos analíticas**: Esquema estructurado de tablas que contiene filas y columnas de datos que ofrecen velocidad y escalabilidad mejoradas en RDBMS, pero que aún se limitan a datos estructurados. Los esquemas rígidos con consultas SQL orientadas a lotes no están diseñados para aplicaciones de streaming. Algunas de las más populares son Oracle Exadata, IBM Netezza, EMC Greenplum, Vertica.
 
-* **Bases de datos NoSQL**: Bueno para aplicaciones web, código de aplicación web sin escritura, depuración y mantenimiento. Escale el escalado horizontal con datos automáticos para admitir a millones de usuarios de aplicaciones web. Compromiso de coherencia (transacciones ACID) a favor de la escala y el tiempo de actividad. El diseño sin esquema permite una ingesta rápida o continua a escala. Buena opción de almacenamiento para alto rendimiento, bajos requisitos de latencia de aplicaciones de transmisión para vistas de datos en tiempo real. Visto como un componente clave de la arquitectura Lambda. Algunas de las más populares son: MongoDB, HBase, Cassandra, MarkLogic, Couchbase.
+* **Bases de datos NoSQL**: Bueno para aplicaciones web, código de aplicación web sin escritura, depuración y mantenimiento. Escala horizontalmente con datos automáticos para admitir a millones de usuarios de aplicaciones web. Compromiso de coherencia (transacciones ACID) a favor de la escala y el tiempo de actividad. El diseño sin esquema permite una ingesta rápida o continua a escala. Buena opción de almacenamiento para alto rendimiento, bajos requisitos de latencia de aplicaciones de transmisión para vistas de datos en tiempo real. Visto como un componente clave de la arquitectura Lambda. Algunas de las más populares son: MongoDB, HBase, Cassandra, MarkLogic, Couchbase.
 
 * **Bases de datos NewSQL**: Corresponde a un nuevo (relativamente) tipo de base de datos que se considera un nuevo paradigma de base de datos RDBMS, en el que se aplican las lecciones aprendidas de las bases de datos NoSQL en el mundo SQL. Están pensadas principalmente para aplicaciones que requieren gestionar gran cantidad de registros, pero con la consistencia que ofrecen las RDBMS y mediante lenguaje SQL. Con respecto a este tipo de bases de datos, hay dos variantes: las que se han creado desde el principio con este concepto (VoltDB, MemSQL, etc.) y las que se han adaptado a este requisito, como es el caso de MySQL Cluster. Algunas de las más populares son Altibase, c-treeACE, CockroachDB, NuoDB, VoltDB.
 
@@ -53,10 +53,15 @@ Las diferentes etapas de la transformación de Big Data requieren y utilizan dif
 
 <br>
 
+<img  height="100" width="200" src="https://byspel.com/wp-content/uploads/2014/06/java.jpg">
+
+* **Java**: Java es un lenguaje de programación orientado a objetos, desarrollado en la década de 90 por un equipo de programadores encabezado por James Gosling en la empresa Sun Microsystems. A diferencia de los lenguajes de programación convencionales, que se compila para código nativo, el lenguaje Java se compila para un bytecode que es interpretado por una máquina virtual (Java Virtual Machine, más conocida por su abreviatura JVM). El lenguaje de programación Java es el lenguaje convencional de la plataforma Java, pero no es su único lenguaje. Muchas de las  herramientas que componen el ecosistema Big Data están escritas en Java. 
+
+<br>
+
 <img  height="100" width="300" src="https://cdn-images-1.medium.com/max/1600/1*PPIp7twJJUknfohZqtL8pQ.png">
 
 * **Python**: Python es un lenguaje de programación fácil de aprender, identifica y asocia automáticamente tipos de datos y sigue una estructura de anidamiento basada en indentación. Tiene su disposición una gran cantidad de librerías para trabajar con Big Data como PyDoop , PySpark, NumPy, Pandas, Scipy entre otras.
-
 
 <img  height="100" width="300" src="https://www.scala-lang.org/resources/img/frontpage/scala-logo-white@2x.png">
 
